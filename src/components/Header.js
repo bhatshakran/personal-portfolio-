@@ -1,4 +1,3 @@
-// import React from "react"
 import { Menu } from "antd"
 import { Link } from "gatsby"
 import {

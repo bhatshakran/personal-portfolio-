@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react"
 import "./styles/HeroBanner.scss"
-import { Typography } from "antd"
+
+import React, { useEffect, useState } from "react"
 import TextTransition, { presets } from "react-text-transition"
+
+import { Typography } from "antd"
 
 const texts = ["Developer,", "and a Designer."]
 const HeroBanner = () => {

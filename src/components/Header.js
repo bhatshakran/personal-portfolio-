@@ -1,17 +1,19 @@
-import React, { useState } from "react"
-import { Menu } from "antd"
-import { Link } from "gatsby"
-import {
-  HomeOutlined,
-  GithubOutlined,
-  ContactsOutlined,
-  InstagramOutlined,
-  FacebookOutlined,
-  WhatsAppOutlined,
-  UserOutlined,
-} from "@ant-design/icons"
 import "antd/dist/antd.css"
 import "./styles/Header.scss"
+
+import {
+  ContactsOutlined,
+  FacebookOutlined,
+  GithubOutlined,
+  HomeOutlined,
+  InstagramOutlined,
+  UserOutlined,
+  WhatsAppOutlined,
+} from "@ant-design/icons"
+import React, { useState } from "react"
+
+import { Link } from "gatsby"
+import { Menu } from "antd"
 import { motion } from "framer-motion"
 
 const Header = ({ siteTitle, siteDescription }) => {
@@ -22,7 +24,8 @@ const Header = ({ siteTitle, siteDescription }) => {
   }
 
   return (
-    <div className="menu-container" style={{ minwidth: 256 }}>
+    <div className="menu-container" style={{ width: 280 }}>
+      <div className="ball"></div>
       <h2>Shaqran </h2>
 
       <Menu

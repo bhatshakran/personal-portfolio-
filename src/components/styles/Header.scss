@@ -17,7 +17,44 @@ body {
   position: relative;
   border-right: 5px solid #c02425;
   border-radius: 0 22px 22px 0;
-
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 8px;
+    right: 8px;
+    background: linear-gradient(180deg, #4ac29a, #bdfff3);
+  }
+  &:hover:after {
+    animation-duration: 3s;
+    animation-name: float;
+  }
+  @keyframes float {
+    from {
+      bottom: 16px;
+    }
+    to {
+      bottom: 8px;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    bottom: 8px;
+    right: 72px;
+    background: linear-gradient(180deg, #b2fefa, #0ed2f7);
+  }
+  &:hover:before {
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-name: float;
+  }
   h2 {
     font-family: $secondary-font;
     color: $secondary-color;
@@ -33,12 +70,25 @@ body {
     .ant-menu-item-selected {
     background: rgb(57, 16, 204);
   }
+  .ball {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      bottom: 8px;
+      right: 112px;
+      background: linear-gradient(180deg, #fff, #cbb4d4);
+    }
+  }
   .social-media {
     margin-top: 3rem;
     text-align: left;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
     a {
       font-size: 2rem;
       color: $secondary-color;

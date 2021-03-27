@@ -1,7 +1,8 @@
-import React from "react"
 import "./styles/index.scss"
-import Layout from "../components/Layout"
+
 import HeroBanner from "../components/HeroBanner"
+import Layout from "../components/Layout"
+import React from "react"
 
 const IndexPage = () => (
   <div className="index-container">

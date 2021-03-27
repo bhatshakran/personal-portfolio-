@@ -9,7 +9,7 @@
     height: 640px;
     border-radius: 24px;
     position: relative;
-    border-right: 8px solid #cb356b;
+    border-right: 4px solid #3d56c7f3;
     border-top: 8px solid #bd3f32;
     box-shadow: 8px -8px 16px #1c92d2;
     position: relative;
@@ -59,6 +59,8 @@
       }
     }
     Button {
+      background: none;
+      color: #40a9ff;
       padding: 0.5rem 1rem;
       width: auto;
       height: auto;

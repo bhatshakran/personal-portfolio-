@@ -25,11 +25,18 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/Untitled-1.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-antd`,
     `gatsby-plugin-sass`,
+    // {
+    //   resolve: "gatsby-source-formspree",
+    //   options: {
+    //     form: "xzbypyek",
+    //     key: "YOUR_API_KEY",
+    //   },
+    // },
   ],
 }

@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react"
+import * as React from "react"
+import { useEffect, useState } from "react"
 import "./styles/HeroBanner.scss"
 import { Typography } from "antd"
 import TextTransition, { presets } from "react-text-transition"

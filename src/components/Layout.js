@@ -4,6 +4,7 @@ import Header from "../components/Header"
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata()
+
   return (
     <>
       <Header siteTitle={title} siteDescription={description} />

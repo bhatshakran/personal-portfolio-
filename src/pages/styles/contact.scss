@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap");
+
+.contact-container {
+  display: flex;
+  background: linear-gradient(-90deg, #1c92d2, #f2fcfe);
+
+  .contact-card {
+    margin: auto auto;
+    height: 640px;
+    border-radius: 24px;
+    position: relative;
+    border-right: 8px solid #cb356b;
+    border-top: 8px solid #bd3f32;
+    box-shadow: 8px -8px 16px #1c92d2;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #f2994a, #f2c94c);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      right: 90px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #e44d26, #f16529);
+    }
+
+    .ant-card-head-title {
+      text-align: center;
+      font-family: "Open Sans";
+      font-weight: 800;
+      font-size: 2rem;
+    }
+
+    .ant-form-item {
+      label {
+        font-size: 1.3rem;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.589);
+      }
+      input,
+      TextArea {
+        height: 40px;
+        padding: 1rem;
+      }
+      TextArea {
+        height: 80px;
+        resize: none;
+      }
+    }
+    Button {
+      padding: 0.5rem 1rem;
+      width: auto;
+      height: auto;
+      font-size: 1.2rem;
+      transition-delay: 0.1s;
+      &:hover {
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
